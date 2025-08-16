@@ -1,4 +1,4 @@
-let users = [
+let users = [ // User Object turned into an Array
   {
    username: "Taillur McEachern",
     email: "tkmmceachern@outlook.com",
@@ -17,20 +17,12 @@ let users = [
   },
 ];
 
-let newUser = { 
-    username:username,
-    email:email,
-    password:password,
-    subscriptionStatus:subscriptionStatus,
-    discordId:discordId,
-    lessonsCompleted:lessonsCompleted, 
+
+function register(user) { //Creating Function , Expecting USER VALUES 
+    users.push(user); //Pushes Users values to a new user Object line 
 }
 
-function register(users) {
-    users.push(newUser)
-}
-
-register({ 
+register({  //Calling Function to set new values for a new Users Object
     username:"Zen",
     email:"zen@frontendsimplified",
     password:"zen123",
